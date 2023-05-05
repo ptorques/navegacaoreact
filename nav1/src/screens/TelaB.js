@@ -7,21 +7,23 @@ import {
 import styles from '../styles/Styles.js'
 
 
-export class A extends Component {
+export class B extends Component {
   render() {
     return (
       <View style={styles.container}>
 
-        <Text style={styles.title}>Tela A</Text>
+        <Text style={styles.title}>Tela B</Text>
+
 
           <TouchableOpacity style={styles.dockitem} onPress={() =>
-            this.props.navigation.navigate('B')}
+            this.props.navigation.push('C')}
           >
-            <Text style={{ color: "#fff" }}>B</Text>
+            <Text style={{ color: "#fff" }}>C</Text>
+            <View style={{ width: "100%", height: "5%", backgroundColor: "#ffffff00" }}></View>
           </TouchableOpacity>
       </View>
     );
   }
 }
 
-export default A;
+export default B;

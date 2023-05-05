@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import A from './src/screens/A.js';
-import B from './src/screens/B.js';
-import C from './src/screens/C.js';
+import A from './src/screens/TelaA.js';
+import B from './src/screens/TelaB.js';
+import C from './src/screens/TelaC.js';
 
 const Stack = createNativeStackNavigator();
 
@@ -12,7 +12,6 @@ function App() {
       <NavigationContainer>
         <Stack.Navigator initialRouteName="A" screenOptions={{
           headerShown: true,
-          headerBackImageSource: "./assets/icon.png"
         }}>
           <Stack.Screen name="A" component={A} options={{ title: 'A' }} />
           <Stack.Screen name="B" component={B} options={{ title: 'B' }} />

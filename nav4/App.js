@@ -3,11 +3,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import A from './src/screens/TelaA.js';
 import B from './src/screens/TelaB.js';
 import C from './src/screens/TelaC.js';
-import '@react-navigation/material-bottom-tabs';
+import '@react-navigation/material-top-tabs';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-
-const Tab = createMaterialBottomTabNavigator();
+const Tab = createMaterialTopTabNavigator();
 
 function MyTabs() {
   return (
@@ -19,10 +18,11 @@ function MyTabs() {
   );
 }
 
+
 function App() {
   return (
       <NavigationContainer>
-        <MyTabs></MyTabs>
+        <MyTabs />
       </NavigationContainer >
   );
 }
