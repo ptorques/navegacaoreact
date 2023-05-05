@@ -1,2 +1,2 @@
 # navegacaoreact
-Atividadde de programação de aplicativos em react native feita em grupo.
+Atividade de programação de aplicativos em react native feita em grupo.
